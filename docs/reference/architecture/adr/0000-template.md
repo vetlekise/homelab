@@ -1,14 +1,8 @@
 # 0000. Description of the the change
 
-!!! question "Status: Proposed"
+**Status**: Proposed / Accepted / Rejected / Deprecated / Superseded by [ADR-000X](000X-title.md)
 
-!!! success "Status: Accepted"
-
-!!! danger "Status: Rejected"
-
-!!! warning "Status: Deprecated"
-
-!!! warning "Status: Superseded by [ADR-000X](000X-title.md)"
+**Date**: YYYY-MM-DD
 
 **Context**: 
 Describe the forces at play, including technological, business, and team constraints that motivate this decision.
