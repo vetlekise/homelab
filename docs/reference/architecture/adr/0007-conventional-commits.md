@@ -20,5 +20,5 @@ PR/MR titles must follow [Conventional Commits](https://www.conventionalcommits.
 
 - `main` ends up with a clean, conventional-commits-compliant history, since each commit is just a squashed PR/MR title.
 - Enables changelog generation off `main` history later, if wanted.
-- Needs a check (e.g. a PR-title-lint CI action) to actually enforce the format; not set up yet.
-- Regular commits inside a branch stay unrestricted.
+- Needs a check (e.g. a PR-title-lint CI action) to actually enforce the format.
+- Regular commits inside a branch stay semi-unrestricted.
