@@ -1,4 +1,4 @@
-# 0007. Prefer reproducible, automation-first homelab management
+# 0005. Prefer reproducible, automation-first homelab management
 
 ## Status
 

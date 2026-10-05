@@ -30,3 +30,11 @@ Why: commented-out code goes stale, confuses readers about what is in use, and s
 - Comments are only for intent, constraints, workarounds, or anything the code cannot show on its own.
 - To bring removed code back, use git history.
 - Temporary local experiments are fine, but remove them before committing.
+
+## AI usage
+
+Use AI for rubber-ducking and discussing complex design choices. Avoid delegating work I need to understand in order to maintain the setup.
+
+Why: this repo is a place to learn, and relying on AI to do the work would make that learning less effective.
+
+- Things may take more time, but I understand everything that is set up.

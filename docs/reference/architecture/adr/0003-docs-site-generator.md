@@ -1,4 +1,4 @@
-# 0004. Use Hugo with Hextra for documentation
+# 0003. Use Hugo with Hextra for documentation
 
 ## Status
 
