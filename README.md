@@ -4,7 +4,5 @@ Production-grade self-hosting at home. The goal is to run it the way you would r
 
 Feel free to copy whatever, and even use it as a framework to build your own.
 
-> Homeprod = home + production.
-
 > [!WARNING]
-> This homeprod is a work in progress and changes quickly. Expect breaking changes, renamed files and shifting conventions without notice.
+> This project is a work in progress and changes quickly. Expect breaking changes, renamed files and shifting conventions without notice.
