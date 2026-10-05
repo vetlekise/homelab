@@ -1,0 +1,41 @@
+name: Enhancement
+description: Suggest an idea, enhancement, or new feature.
+labels: ["enhancement"]
+assignees:
+  - vetlekise
+body:
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Describe the Enhancement
+      description: "What is the goal?"
+      placeholder: "e.g., Implement automated backups for the Nextcloud instance."
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation / Problem Solved
+      description: "Why is this feature needed? What problem does it solve or what benefit does it provide?"
+      placeholder: "e.g., Currently, Nextcloud data is not backed up, risking data loss. Automated backups would ensure data safety."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: "Do you have any ideas on how this feature could be implemented?"
+      placeholder: "e.g., Use Duplicati in a Docker container to back up Nextcloud data volume to a NAS share."
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: "Are there any alternative solutions or features you've considered?"
+      placeholder: "e.g., Manually copying files, using Nextcloud's built-in backup app (if applicable)."
+    validations:
+      required: false
