@@ -1,0 +1,41 @@
+name: Documentation
+description: Report an error, suggest an improvement, or request new documentation.
+labels: ["documentation"]
+assignees:
+  - vetlekise
+body:
+  - type: input
+    id: doc-location
+    attributes:
+      label: Location of Documentation
+      description: "Which document, section, or page needs attention?"
+      placeholder: "e.g., README.md - Usage Section"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the Documentation Issue/Request
+      description: "Is something unclear, incorrect, missing, or needs updating?"
+      placeholder: "e.g., The command listed for starting the service is incorrect."
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation / Reason
+      description: "Why does this documentation need changing? What problem does the current state cause?"
+      placeholder: "e.g., Following the current command results in an error. The documentation is confusing for new users."
+    validations:
+      required: false
+
+  - type: textarea
+    id: proposed-change
+    attributes:
+      label: Proposed Change / Suggestion
+      description: "How do you suggest fixing or improving the documentation?"
+      placeholder: "e.g., The command should be `systemctl start my-service` instead of `service my-service start`."
+    validations:
+      required: false
