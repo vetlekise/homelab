@@ -1,4 +1,4 @@
-# 0002. Use the Kubernetes style guide, enforced with Vale
+# 0002. Use the Google developer documentation style guide, enforced with Vale
 
 ## Status
 
@@ -10,24 +10,17 @@ Accepted
 
 ## Context
 
-Diátaxis ([0001-documentation-framework.md](0001-documentation-framework.md)) handles structure, not prose style. Still need something for grammar, tone and terminology, and something to enforce it, since manual-only guidelines get ignored over time.
+Diátaxis ([0001-documentation-framework.md](0001-documentation-framework.md)) covers structure, not prose. Need a style guide, and a linter to enforce it, since manual guidelines get ignored.
 
-**Style guide:** Looked at Google, Microsoft, GitHub, GitLab, and Kubernetes' style guides. Google/Microsoft/GitHub/GitLab are all single-company styles, and GitHub's just defers to Microsoft anyway. Kubernetes' is community-run (CNCF/SIG Docs) and already fits this repo's domain (k8s, YAML, CLI stuff).
-
-**Linter:** Looked at textlint (Node, pulls in the npm toolchain), LanguageTool (Java, heavier, grammar-only), and Harper (Rust, lightweight, but smaller rule/vocabulary ecosystem). Vale is a single Go binary, markup-aware (skips code blocks), has a Hugo compatibility package, and a big library of ready-made style packages.
-
-No Vale style package implements the Kubernetes guide exactly. Using `RedHat` or `Google` packages as a base gets most of the generic prose rules (passive voice, punctuation, etc.), then a handful of custom rules cover the k8s-specific bits (word list, avoid "simply/just/easily", active voice, present tense).
+- **Style guide:** Google and Microsoft both have official Vale packages. Kubernetes fits the domain better, but no package implements it, so it would need hand-written rules. GitHub defers to Microsoft, and GitLab has no package. Google's is aimed at technical docs.
+- **Linter:** textlint pulls in the npm toolchain, LanguageTool is heavy and grammar-only, and Harper has a small rule ecosystem. Vale is a single binary, skips code blocks, and has ready-made style packages.
 
 ## Decision
 
-Use the [Kubernetes documentation style guide](https://kubernetes.io/docs/contribute/style/style-guide/) for prose.
-
-Use [Vale](https://vale.sh/) to lint prose in `docs/`, based on the `RedHat` style package plus a small custom style for Kubernetes-guide-specific rules.
+Use the [Google developer documentation style guide](https://developers.google.com/style), enforced with [Vale](https://vale.sh/) and its official `Google` package on `docs/`. No custom rules.
 
 ## Consequences
 
-- Covers prose, not actual code style (Terraform/YAML formatting is a separate linter's job).
-- Some k8s-specific rules (API object capitalization etc.) just don't apply outside k8s content (can be ignored).
-- Needs a `.vale.ini` config and a custom styles folder checked into the repo.
-- Custom rules need to be written and maintained by hand since no off-the-shelf package matches the Kubernetes guide.
-- Not yet wired into CI; follow-up work.
+- Prose only; Terraform/YAML formatting needs a separate linter.
+- Only a `.vale.ini` to maintain; disable overly strict rules there.
+- Not yet wired into CI.
