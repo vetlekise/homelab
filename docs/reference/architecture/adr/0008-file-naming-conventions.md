@@ -10,7 +10,7 @@ Accepted
 
 ## Context
 
-This repo mixes several ecosystems, each with its own naming conventions. Kubernetes requires DNS-1123 names (lowercase, hyphens), Terraform's style guide uses underscores for identifiers, and Hugo publishes file names as URLs. A single repo-wide convention would fight at least one of them.
+This repo will use many different products, each with its own naming conventions (e.g. Terraform, Kubernetes). Kubernetes requires DNS-1123 names (lowercase, hyphens), Terraform's style guide uses underscores for identifiers, and Hugo publishes file names as URLs. A single repo-wide convention would fight at least one of them.
 
 ## Decision 
 
