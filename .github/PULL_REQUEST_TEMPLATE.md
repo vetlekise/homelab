@@ -1,4 +1,4 @@
-<!-- PR title must follow Conventional Commits: type(scope): description (see ADR 0007). It becomes the squash commit message on main. -->
+<!-- PR title must follow Conventional Commits: type(scope): description (see CONTRIBUTING.md). It becomes the squash commit message on main. -->
 
 ## Description
 

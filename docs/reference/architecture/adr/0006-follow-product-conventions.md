@@ -1,4 +1,4 @@
-# 0008. Follow each product's own conventions
+# 0006. Follow each product's own conventions
 
 ## Status
 
