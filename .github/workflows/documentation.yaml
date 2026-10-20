@@ -9,7 +9,7 @@ on:
       - hugo.yaml
       - go.mod
       - go.sum
-      - .github/workflows/hugo.yaml
+      - .github/workflows/documentation.yaml
 
 env:
   HUGO_VERSION: 0.168.0
