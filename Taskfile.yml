@@ -1,0 +1,12 @@
+version: "3"
+
+tasks:
+  docs:serve:
+    desc: Preview the documentation locally (includes drafts)
+    cmds:
+      - hugo server --buildDrafts --disableFastRender
+
+  docs:build:
+    desc: Build the documentation site
+    cmds:
+      - hugo --gc --minify

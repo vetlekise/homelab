@@ -16,7 +16,7 @@ The two realistic options were MkDocs Material and Hugo with a documentation the
 
 ## Decision
 
-Use Hugo with the Hextra theme to generate the documentation site from `docs/`.
+Use [Hugo](https://gohugo.io/documentation/) with the [Hextra](https://imfing.github.io/hextra/docs/) theme to generate the documentation site from `docs/`.
 
 ## Consequences 
 
