@@ -8,7 +8,9 @@ Install [pre-commit](https://pre-commit.com/#install), then run `pre-commit inst
 
 Hooks check staged files before each commit. Run `task lint` to check all tracked files. If a hook fixes files, review and stage the changes before committing again.
 
-Checks are local only for now; CI and Vale will follow.
+Vale checks all Markdown against the Google style guide. Pre-commit installs Vale using Go and syncs the style package over the internet before linting. Errors block commits; warnings don't.
+
+Checks are local only for now.
 
 ## Git workflow
 

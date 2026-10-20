@@ -8,3 +8,13 @@ repos:
       - id: check-json
       - id: check-merge-conflict
       - id: check-added-large-files
+  - repo: https://github.com/vale-cli/vale
+    rev: v3.24.0
+    hooks:
+      - id: vale
+        name: vale sync
+        types: [markdown]
+        pass_filenames: false
+        args: [sync]
+      - id: vale
+        types: [markdown]

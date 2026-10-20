@@ -17,7 +17,7 @@ Diátaxis ([0001-documentation-framework.md](0001-documentation-framework.md)) c
 
 ## Decision
 
-Use the [Google developer documentation style guide](https://developers.google.com/style), enforced with [Vale](https://vale.sh/) and its official `Google` package on `docs/`. No custom rules.
+Use the [Google developer documentation style guide](https://developers.google.com/style), enforced with [Vale](https://vale.sh/) and its official `Google` package on all Markdown in the repository. No custom rules.
 
 ## Consequences
 

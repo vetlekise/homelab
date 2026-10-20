@@ -10,15 +10,15 @@ Accepted
 
 ## Context
 
-This repo will use many different products, each with its own conventions for naming, file layout, formatting and structure (e.g. Terraform, Kubernetes).
+This repo will use many different products, each with its own conventions for naming, file layout, formatting and structure (for example, Terraform and Kubernetes).
 
 ## Decision
 
 Follow the conventions of the product a file or resource belongs to (naming, layout, formatting). The product's documentation is the source of truth.
 
-Deviate only when absolutely necessary, and document the deviation and the reason where it applies (e.g. a comment next to the code or in the relevant docs).
+Deviate only when absolutely necessary, and document the deviation and the reason where it applies (for example, a comment next to the code or in the relevant docs).
 
-Where no product convention exists (e.g. Markdown documentation and images under `docs/`), use lowercase kebab-case for file names, matching the existing ADR file names.
+Where no product convention exists (for example, Markdown documentation and images under `docs/`), use lowercase kebab-case for file names, matching the existing ADR file names.
 
 ## Consequences
 

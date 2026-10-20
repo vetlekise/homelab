@@ -22,4 +22,4 @@ Run it before commits locally and with `pre-commit run --all-files` in CI. Faile
 
 - Contributors must install the local hooks.
 - CI catches failures even when local hooks are skipped.
-- Basic file checks run locally. Vale and CI wiring still need to be added.
+- Basic file checks and Vale run locally. CI wiring still needs to be added.

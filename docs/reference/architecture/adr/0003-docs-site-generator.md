@@ -22,4 +22,4 @@ Use [Hugo](https://gohugo.io/documentation/) with the [Hextra](https://imfing.gi
 
 - Hextra avoids Docsy’s Node/PostCSS/Sass toolchain, though Hugo Modules requires Go tooling.
 - Documentation should use portable Markdown; MkDocs-specific syntax won’t render natively in Hugo.
-- Hugo scaffolding and GitHub Pages deployment still need to be added. Schema-based references (e.g. Crossplane resources) need a separate step to generate Markdown.
+- Hugo scaffolding and GitHub Pages deployment still need to be added. Schema-based references (for example, Crossplane resources) need a separate step to generate Markdown.
