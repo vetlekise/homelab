@@ -27,4 +27,4 @@ Build the site from the repository with GitHub Actions and deploy it to Pages wh
 - Published documentation is public. Keep secrets and sensitive operational details out of the site.
 - Hosting is limited to static content and depends on GitHub's availability and Pages limits.
 - Site links and assets must work under the `/homelab/` project path.
-- A GitHub Actions deployment workflow and repository Pages configuration still need to be added.
+- The GitHub Actions deployment workflow must be maintained, and the repository Pages build source must remain set to GitHub Actions.
