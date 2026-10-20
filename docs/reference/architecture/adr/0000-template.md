@@ -12,7 +12,7 @@ YYYY-MM-DD
 
 Describe the forces at play, including technological, business, and team constraints that motivate this decision.
 
-## Decision 
+## Decision
 
 Describe the change that is being proposed or has been agreed upon.
 

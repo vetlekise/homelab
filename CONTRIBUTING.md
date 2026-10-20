@@ -2,6 +2,14 @@
 
 Rules for changes to this repo, mostly for future me.
 
+## Local checks
+
+Install [pre-commit](https://pre-commit.com/#install), then run `pre-commit install` once after cloning.
+
+Hooks check staged files before each commit. Run `task lint` to check all tracked files. If a hook fixes files, review and stage the changes before committing again.
+
+Checks are local only for now; CI and Vale will follow.
+
 ## Git workflow
 
 All changes land on `main` through a PR/MR, squash-merged, with fast-forward only (no merge commits). Branch protection enforces this.

@@ -12,7 +12,7 @@ Accepted
 
 This repo will use many different products, each with its own conventions for naming, file layout, formatting and structure (e.g. Terraform, Kubernetes).
 
-## Decision 
+## Decision
 
 Follow the conventions of the product a file or resource belongs to (naming, layout, formatting). The product's documentation is the source of truth.
 

@@ -12,7 +12,7 @@ Accepted
 
 We all hate documentation... but it’s necessary. So why not do it right from the start and set some standards?
 
-## Decision 
+## Decision
 
 Use the framework [Diátaxis](https://diataxis.fr/) to set the standards.
 

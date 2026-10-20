@@ -1,6 +1,11 @@
 version: "3"
 
 tasks:
+  lint:
+    desc: Run pre-commit checks on all tracked files
+    cmds:
+      - pre-commit run --all-files
+
   docs:serve:
     desc: Preview the documentation locally (includes drafts)
     cmds:

@@ -18,7 +18,7 @@ The two realistic options were MkDocs Material and Hugo with a documentation the
 
 Use [Hugo](https://gohugo.io/documentation/) with the [Hextra](https://imfing.github.io/hextra/docs/) theme to generate the documentation site from `docs/`.
 
-## Consequences 
+## Consequences
 
 - Hextra avoids Docsy’s Node/PostCSS/Sass toolchain, though Hugo Modules requires Go tooling.
 - Documentation should use portable Markdown; MkDocs-specific syntax won’t render natively in Hugo.
