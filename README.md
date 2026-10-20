@@ -1,8 +1,8 @@
-# Vetle's Homeprod
+> [!WARNING]
+> This project is **currently** a work in progress and changes quickly. Expect breaking changes, renamed files and shifting conventions without notice.
 
-Production-grade self-hosting at home. The goal is to run it the way you would run a professional service: up-to-date documentation, monitoring and alerting, automated certificate rotation, a strong security posture, and everything defined as code.
+# Vetle's Homelab
+
+A personal homelab built around automation and reproducible infrastructure, with a primary focus on hosting my media library and the services that support it.
 
 Feel free to copy whatever, and even use it as a framework to build your own.
-
-> [!WARNING]
-> This project is a work in progress and changes quickly. Expect breaking changes, renamed files and shifting conventions without notice.
