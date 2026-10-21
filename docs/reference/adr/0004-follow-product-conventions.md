@@ -1,3 +1,8 @@
+---
+aliases:
+  - /reference/architecture/adr/0004-follow-product-conventions/
+---
+
 # 0004. Follow each product's own conventions
 
 ## Status

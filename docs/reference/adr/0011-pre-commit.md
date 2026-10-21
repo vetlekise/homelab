@@ -1,3 +1,8 @@
+---
+aliases:
+  - /reference/architecture/adr/0011-pre-commit/
+---
+
 # 0011. Use pre-commit for local and CI checks
 
 ## Status

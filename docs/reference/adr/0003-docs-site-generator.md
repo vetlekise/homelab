@@ -1,3 +1,8 @@
+---
+aliases:
+  - /reference/architecture/adr/0003-docs-site-generator/
+---
+
 # 0003. Use Hugo with Hextra for documentation
 
 ## Status

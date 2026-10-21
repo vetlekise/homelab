@@ -1,3 +1,8 @@
+---
+aliases:
+  - /reference/architecture/adr/0000-template/
+---
+
 # 0000. Description of the the change
 
 ## Status

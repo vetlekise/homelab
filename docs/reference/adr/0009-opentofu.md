@@ -1,3 +1,8 @@
+---
+aliases:
+  - /reference/architecture/adr/0009-opentofu/
+---
+
 # 0009. Use OpenTofu instead of Terraform
 
 ## Status

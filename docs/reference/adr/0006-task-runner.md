@@ -1,3 +1,8 @@
+---
+aliases:
+  - /reference/architecture/adr/0006-task-runner/
+---
+
 # 0006. Use Task as the command wrapper
 
 ## Status

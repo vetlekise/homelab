@@ -1,3 +1,8 @@
+---
+aliases:
+  - /reference/architecture/adr/0007-kubernetes-talos/
+---
+
 # 0007. Use Talos Linux to run Kubernetes
 
 ## Status
