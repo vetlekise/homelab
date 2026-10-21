@@ -18,6 +18,6 @@ Our documentation is based on the [Diátaxis framework](https://diataxis.fr/), w
 
 Reference pages describe the homelab’s architecture and document its architectural decision records (ADRs).
 
-### How-to guides
+### Guides
 
-How-tos provide step-by-step instructions for manual homelab tasks.
+[Guides](guides/_index.md) provide step-by-step instructions for specific homelab tasks, including manual setup, maintenance, and recovery.
