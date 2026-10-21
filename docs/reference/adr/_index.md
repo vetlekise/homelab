@@ -17,7 +17,7 @@ Why I did the thing, for future me. Subject to change when I inevitably regret i
 
 Will I use this for ALL my decisions? Hell nah.
 
-Copy the [template](0000-template.md) to start a new ADR.
+Copy the [template](0000-template.md) to start a new ADR. Add it to the table below and keep its status in the table up to date.
 
 {{< callout type="info" >}}
   Check whether your new ADR supersedes an older one. If it does, update the older ADR's status to `Superseded by`.
@@ -38,5 +38,3 @@ Copy the [template](0000-template.md) to start a new ADR.
 | 0009 | [Use OpenTofu instead of Terraform](0009-opentofu.md) | Accepted |
 | 0010 | [Use GitHub Pages to serve documentation](0010-github-pages.md) | Accepted |
 | 0011 | [Use pre-commit for local and CI checks](0011-pre-commit.md) | Accepted |
-
-Add new ADRs to this table and update their statuses here when they change.
