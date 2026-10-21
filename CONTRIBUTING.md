@@ -43,8 +43,10 @@ Why: commented-out code goes stale, confuses readers about what is in use, and s
 
 ## AI usage
 
-Use AI for rubber-ducking and discussing complex design choices. Avoid delegating work I need to understand in order to maintain the setup.
+Use AI for rubber-ducking and discussing complex design choices. Delegate familiar, routine work to agents, such as setting up basic tooling, linting, or documentation scaffolding.
 
-Why: this repo is a place to learn, and relying on AI to do the work would make that learning less effective.
+Why: the main learning goal is infrastructure, not repeating tooling setup I already know. Agents can help with supporting work without taking over that learning.
 
-- Things may take more time, but I understand everything that is set up.
+- Work through infrastructure design, implementation, and troubleshooting myself, with AI providing explanations, questions, and feedback.
+- Review and verify delegated changes so I can maintain what is set up.
+- Delegate based on what I already understand, not just whether a task looks simple.
