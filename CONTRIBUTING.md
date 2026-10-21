@@ -31,6 +31,13 @@ Why: with squash merges, the PR/MR title is the only commit message that survive
 - Commits inside a branch are not restricted.
 - A PR-title-lint CI check should enforce the format.
 
+## Product conventions
+
+Follow each product's conventions for naming, file layout, formatting, and structure, as decided in [ADR 0004](docs/reference/adr/0004-follow-product-conventions.md). Use the product's documentation as the source of truth.
+
+- Deviate only when necessary, and document the reason next to the code or in the relevant documentation.
+- Where no product convention exists, use lowercase kebab-case for file names, including Markdown documents and images.
+
 ## Removing code
 
 Delete unused code completely. Do not comment it out, rename it to `.bak` or `.old`, or hide it behind always-false conditions.
