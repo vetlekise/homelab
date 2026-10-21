@@ -1,7 +1,9 @@
+/* Hide dropdown arrows when there are no visible child navigation items. */
 .hextra-sidebar-container li:not(:has(> .hextra-sidebar-children))>.hextra-sidebar-item>.hextra-sidebar-collapsible-button {
     display: none;
 }
 
+/* Reclaim the link padding reserved for the hidden dropdown arrow. */
 .hextra-sidebar-container li:not(:has(> .hextra-sidebar-children))>.hextra-sidebar-item>a {
     padding-inline-end: 0.5rem;
 }
