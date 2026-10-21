@@ -1,0 +1,7 @@
+.hextra-sidebar-container li:not(:has(> .hextra-sidebar-children))>.hextra-sidebar-item>.hextra-sidebar-collapsible-button {
+    display: none;
+}
+
+.hextra-sidebar-container li:not(:has(> .hextra-sidebar-children))>.hextra-sidebar-item>a {
+    padding-inline-end: 0.5rem;
+}

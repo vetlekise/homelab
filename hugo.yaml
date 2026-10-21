@@ -2,6 +2,7 @@ baseURL: https://vetlekise.github.io/homelab/
 locale: en
 title: Vetle's Homelab
 contentDir: docs
+assetDir: hugo/assets
 
 caches:
   images:
