@@ -4,7 +4,7 @@ Rules for changes to this repo, mostly for future me.
 
 ## Local checks
 
-Install [pre-commit](https://pre-commit.com/#install), then run `pre-commit install` once after cloning.
+Set up the tools and Git hooks once after cloning, as described in the [README](README.md#local-development).
 
 Hooks check staged files before each commit. Run `task lint` to check all tracked files. If a hook fixes files, review and stage the changes before committing again.
 

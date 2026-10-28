@@ -1,0 +1,6 @@
+[tools]
+go = "1.27.3"
+python = "3.14"
+"aqua:gohugoio/hugo" = "0.168.0"
+"aqua:pre-commit/pre-commit" = "4.7.0"
+"aqua:go-task/task" = "3.54.0"
