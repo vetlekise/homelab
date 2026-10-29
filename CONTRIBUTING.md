@@ -38,6 +38,12 @@ Follow each product's conventions for naming, file layout, formatting, and struc
 - Deviate only when necessary, and document the reason next to the code or in the relevant documentation.
 - Where no product convention exists, use lowercase kebab-case for file names, including Markdown documents and images.
 
+## Documentation navigation
+
+Sections without an `_index.md` file act as expandable sidebar groups. Add an `_index.md` file when a section needs a landing page; its sidebar title then links to that page.
+
+This behavior uses [a small sidebar script](hugo/assets/js/core/sidebar-groups.js), loaded through Hextra's core script pipeline. It reuses the theme's toggle buttons instead of overriding its sidebar template. JavaScript must be enabled; without it, section titles remain normal links.
+
 ## Removing code
 
 Delete unused code completely. Do not comment it out, rename it to `.bak` or `.old`, or hide it behind always-false conditions.

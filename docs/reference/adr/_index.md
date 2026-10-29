@@ -38,3 +38,4 @@ Copy the [template](0000-template.md) to start a new ADR. Add it to the table be
 | 0009 | [Use OpenTofu instead of Terraform](0009-opentofu.md) | Accepted |
 | 0010 | [Use GitHub Pages to serve documentation](0010-github-pages.md) | Accepted |
 | 0011 | [Use pre-commit for local and CI checks](0011-pre-commit.md) | Accepted |
+| 0012 | [Use mise to manage development tools](0012-development-tool-management.md) | Proposed |
