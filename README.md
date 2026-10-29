@@ -12,7 +12,13 @@ Feel free to copy whatever, and even use it as a framework to build your own.
 Development tools are pinned in [mise.toml](mise.toml) and installed with [mise](https://mise.jdx.dev/), on Linux, macOS, and Windows.
 
 1. [Install mise](https://mise.jdx.dev/installing-mise.html).
-2. Activate mise in your shell once.
+2. Activate mise in your shell once. This lets mise add the repository's pinned tool versions to your `PATH` automatically, so commands run with the versions specified for this project.
+
+macOS (zsh), in `~/.zshrc`:
+
+```sh
+eval "$(mise activate zsh)"
+```
 
 Bash, in `~/.bashrc`:
 
