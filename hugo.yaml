@@ -4,6 +4,12 @@ title: Vetle's Homelab
 contentDir: docs
 assetDir: hugo/assets
 
+params:
+  page:
+    width: full
+  navbar:
+    width: full
+
 caches:
   images:
     dir: :cacheDir/images
