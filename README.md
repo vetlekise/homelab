@@ -45,12 +45,3 @@ task setup
 ```
 
 Run `task --list` to see the available tasks, such as `task lint` and `task docs:serve`.
-
-## Documentation branding
-
-The header and favicon share [hugo/static/images/logo.svg](hugo/static/images/logo.svg).
-The [favicon partial](hugo/layouts/_partials/favicons.html) overrides Hextra's
-default icon links to use only this SVG, with no raster fallbacks or web app
-manifest. The orange badge uses transparent house/server cutouts so the page
-background shows through in either theme. Update the SVG to change the README,
-header, and favicon together.
