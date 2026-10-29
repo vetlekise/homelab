@@ -15,11 +15,7 @@ Accepted
 
 ## Context
 
-Repeated commands (lint, build docs, apply, etc.) need one documented entry point instead of being remembered or copy-pasted. This supports [0005-automation-first.md](0005-automation-first.md).
-
-- **Make:** ancient, tab-sensitive syntax, designed for building C, and works poorly on Windows without extra tooling.
-- **Just:** nice syntax and cross-platform, but uses its own non-YAML format.
-- **Task:** single Go binary, cross-platform with a built-in shell interpreter, and uses YAML like the rest of the tooling in this repo.
+Common commands need one documented entry point. Task uses familiar YAML and a built-in shell interpreter for macOS, Linux, and Windows.
 
 ## Decision
 
@@ -27,6 +23,5 @@ Use [Task](https://taskfile.dev/) with a `Taskfile.yml` at the repo root as the 
 
 ## Consequences
 
-- Works the same on macOS, Linux and Windows.
-- Needs the `task` binary installed; document it in the setup docs.
-- Tasks are the documented way to run common commands, so scripts stay discoverable via `task --list`.
+- Common commands are documented as tasks and discoverable through `task --list`.
+- Each client needs the `task` binary installed; document setup requirements.

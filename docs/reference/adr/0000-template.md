@@ -3,7 +3,7 @@ aliases:
   - /reference/architecture/adr/0000-template/
 ---
 
-# 0000. Description of the the change
+# 0000. Short decision title
 
 ## Status
 
@@ -15,13 +15,13 @@ YYYY-MM-DD
 
 ## Context
 
-Describe the forces at play, including technological, business, and team constraints that motivate this decision.
+Explain the problem and key reason for the choice in one short paragraph.
 
 ## Decision
 
-Describe the change that is being proposed or has been agreed upon.
+State the choice briefly. Link to the tool or relevant documentation.
 
 ## Consequences
 
-- Describe the resulting context after applying the decision, including trade-offs and follow-up work.
-- Or just paste: `¯\_(ツ)_/¯`
+- Note the main benefit or operational impact.
+- Note the main trade-off or follow-up work.

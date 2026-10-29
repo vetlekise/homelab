@@ -15,13 +15,13 @@ Accepted
 
 ## Context
 
-We all hate documentation... but it’s necessary. So why not do it right from the start and set some standards?
+Documentation needs a consistent structure from the start.
 
 ## Decision
 
-Use the framework [Diátaxis](https://diataxis.fr/) to set the standards.
+Use [Diátaxis](https://diataxis.fr/) to structure documentation.
 
 ## Consequences
 
-- New documentation should fit one of the Diátaxis categories.
-- Diátaxis only cover *deep quality* and cannot address *functional quality*, meaning we should maybe pair it with a separate style guide.
+- Documentation fits one of the four Diátaxis categories.
+- Diátaxis guides structure, not prose; a separate style guide is needed.

@@ -15,21 +15,14 @@ Accepted
 
 ## Context
 
-The documentation site is generated with Hugo and Hextra ([0003-docs-site-generator.md](0003-docs-site-generator.md)) and only needs static hosting. The source already lives on GitHub.
-
-Hosting the site inside the homelab would add infrastructure to maintain and make recovery documentation unavailable when the homelab is down. Other managed static hosting services would add another service to configure without a clear benefit for this site.
+The [Hugo site](0003-docs-site-generator.md) only needs static hosting, and its source already lives on GitHub. Recovery documentation should remain available when the homelab is down.
 
 ## Decision
 
-Use [GitHub Pages](https://docs.github.com/en/pages) to serve the generated documentation at <https://vetlekise.github.io/homelab/>.
-
-Build the site from the repository with GitHub Actions and deploy it to Pages when changes land on `main`. Keep Markdown in `docs/` as the source of truth; do not commit generated site files.
+Use [GitHub Pages](https://docs.github.com/en/pages) at <https://vetlekise.github.io/homelab/>, built and deployed by GitHub Actions when changes land on `main`.
 
 ## Consequences
 
-- Documentation remains accessible when the homelab is unavailable, as long as GitHub Pages is available.
-- No web server or separate hosting service needs to be maintained.
-- Published documentation is public. Keep secrets and sensitive operational details out of the site.
-- Hosting is limited to static content and depends on GitHub's availability and Pages limits.
-- Site links and assets must work under the `/homelab/` project path.
-- The GitHub Actions deployment workflow must be maintained, and the repository Pages build source must remain set to GitHub Actions.
+- Hosting is public, static, and dependent on GitHub's availability and limits; exclude secrets and sensitive details.
+- Keep `docs/` as the source of truth, never commit generated files, and support the `/homelab/` path.
+- Maintain the deployment workflow and keep the Pages build source set to GitHub Actions.
