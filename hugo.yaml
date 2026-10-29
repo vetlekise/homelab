@@ -14,9 +14,6 @@ module:
 
 menu:
   main:
-    - name: Documentation
-      pageRef: /
-      weight: 1
     - name: Search
       weight: 2
       params:

@@ -3,6 +3,11 @@
     display: none;
 }
 
+.hextra-sidebar-group {
+    text-align: start;
+    padding-inline-end: 0.5rem;
+}
+
 /* Reclaim the link padding reserved for the hidden dropdown arrow. */
 .hextra-sidebar-container li:not(:has(> .hextra-sidebar-children))>.hextra-sidebar-item>a {
     padding-inline-end: 0.5rem;
