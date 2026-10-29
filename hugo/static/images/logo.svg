@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.14734 64">
+  <title>Vetle's Homelab</title>
+
+  <defs>
+    <mask id="cutout" maskUnits="userSpaceOnUse" x="0" y="0" width="78.14734" height="64" style="mask-type:luminance">
+      <rect width="78.14734" height="64" fill="white"/>
+      <g transform="translate(39.07367 32) scale(1.12) translate(-32 -31.5)">
+        <path
+          d="M7 29 32 12 57 29M14 25v26h36V25"
+          fill="none"
+          stroke="black"
+          stroke-width="5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <g fill="black">
+          <rect x="21" y="27.5" width="22" height="7" rx="2"/>
+          <rect x="21" y="38" width="22" height="7" rx="2"/>
+        </g>
+        <g fill="white">
+          <circle cx="25" cy="31" r="1.5"/>
+          <circle cx="25" cy="41.5" r="1.5"/>
+        </g>
+      </g>
+    </mask>
+  </defs>
+
+  <rect width="78.14734" height="64" rx="8.27136" fill="#70A354" mask="url(#cutout)"/>
+</svg>

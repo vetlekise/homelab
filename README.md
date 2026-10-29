@@ -1,7 +1,12 @@
 > [!WARNING]
 > This project is **currently** a work in progress and changes quickly. Expect breaking changes, renamed files and shifting conventions without notice.
 
-# Vetle's Homelab
+<h1>
+  <img src="hugo/static/images/logo.svg"
+       alt="House enclosing two server bays"
+       width="68" height="56" align="absmiddle">
+  Vetle's Homelab
+</h1>
 
 A personal homelab built around automation and reproducible infrastructure, with a primary focus on hosting my media library and the services that support it.
 
@@ -40,3 +45,12 @@ task setup
 ```
 
 Run `task --list` to see the available tasks, such as `task lint` and `task docs:serve`.
+
+## Documentation branding
+
+The header and favicon share [hugo/static/images/logo.svg](hugo/static/images/logo.svg).
+The [favicon partial](hugo/layouts/_partials/favicons.html) overrides Hextra's
+default icon links to use only this SVG, with no raster fallbacks or web app
+manifest. The orange badge uses transparent house/server cutouts so the page
+background shows through in either theme. Update the SVG to change the README,
+header, and favicon together.
