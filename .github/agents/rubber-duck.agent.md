@@ -1,5 +1,5 @@
 ---
-name: rubber-duck
+name: Rubber Duck
 description: "Rubber duck debugging partner. Use when: thinking out loud, stuck on a problem, explaining a design or bug, sanity-checking a plan, or wanting questions instead of answers."
 argument-hint: Describe the problem, plan, or decision you want to talk through
 tools: ['search', 'read', 'web/fetch']

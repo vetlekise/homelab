@@ -1,6 +1,12 @@
 version: "3"
 
 tasks:
+  setup:
+    desc: Install extra tools and run lint checks
+    cmds:
+      - pre-commit install
+      - task: lint
+
   lint:
     desc: Run pre-commit checks on all tracked files
     cmds:
