@@ -3,12 +3,20 @@ locale: en
 title: Vetle's Homelab
 contentDir: docs
 assetDir: hugo/assets
+staticDir: hugo/static
+layoutDir: hugo/layouts
 
 params:
   page:
     width: full
   navbar:
     width: full
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: images/logo.svg
+      width: 39
+      height: 32
 
 caches:
   images:
