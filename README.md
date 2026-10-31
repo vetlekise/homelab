@@ -44,4 +44,4 @@ mise install
 task setup
 ```
 
-Run `task --list` to see the available tasks, such as `task lint` and `task docs:serve`.
+Run `task --list` to see the available tasks.
