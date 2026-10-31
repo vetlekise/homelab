@@ -1,5 +1,5 @@
 ---
-title: Decision records
+title: Decision Records
 weight: 2
 aliases:
   - /reference/architecture/adr/

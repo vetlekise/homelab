@@ -12,6 +12,17 @@ Vale checks all Markdown against the Google style guide. Pre-commit installs Val
 
 Checks are local only for now.
 
+## Dependency updates
+
+The [Renovate workflow](.github/workflows/renovate.yaml) runs daily at 05:37 UTC. You can also run it manually from the Actions tab on `main`.
+
+The workflow uses the built-in `GITHUB_TOKEN`, scoped to this repository. It reads the [Renovate configuration](.github/renovate.json) from the default branch. Workflow files, including `HUGO_VERSION`, are excluded because this token can't update them.
+No updates merge automatically.
+
+PRs opened with this token don't trigger normal PR workflows.
+Run `task lint` and `task docs:build` on update branches before merging.
+Revisit authentication before relying on automatic PR checks.
+
 ## Git workflow
 
 All changes land on `main` through a PR/MR, squash-merged, with fast-forward only (no merge commits). Branch protection enforces this.
