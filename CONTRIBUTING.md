@@ -14,14 +14,9 @@ Checks are local only for now.
 
 ## Dependency updates
 
-The [Renovate workflow](.github/workflows/renovate.yaml) runs daily at 05:37 UTC.
-After merging it into `main`, enable **Allow GitHub Actions to create and approve pull requests**
-under **Settings > Actions > General > Workflow permissions**.
-You can also run it manually from the Actions tab on `main`.
+The [Renovate workflow](.github/workflows/renovate.yaml) runs daily at 05:37 UTC. You can also run it manually from the Actions tab on `main`.
 
-The workflow uses the built-in `GITHUB_TOKEN`, scoped to this repository.
-It reads the [Renovate configuration](.github/renovate.json) from the default branch.
-Workflow files, including `HUGO_VERSION`, are excluded because this token can't update them.
+The workflow uses the built-in `GITHUB_TOKEN`, scoped to this repository. It reads the [Renovate configuration](.github/renovate.json) from the default branch. Workflow files, including `HUGO_VERSION`, are excluded because this token can't update them.
 No updates merge automatically.
 
 PRs opened with this token don't trigger normal PR workflows.
