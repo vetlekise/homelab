@@ -14,6 +14,8 @@ Checks are local only for now.
 
 ## Dependency updates
 
+Track dependency updates in Renovate's [Dependency Dashboard](https://github.com/vetlekise/homelab/issues/12).
+
 The [Renovate workflow](.github/workflows/renovate.yaml) runs daily at 05:37 UTC. You can also run it manually from the Actions tab on `main`. Renovate's [configuration](.github/renovate.json) schedules updates for Monday mornings in the `Europe/Oslo` timezone.
 
 The workflow creates a short-lived token for a dedicated GitHub App using the `RENOVATE_APP_CLIENT_ID` variable and `RENOVATE_APP_PRIVATE_KEY` secret. The App needs the permissions listed in Renovate's [GitHub App guide](https://docs.renovatebot.com/modules/platform/github/#running-as-a-github-app), including read/write access to workflows. Renovate reads its configuration from the default branch. No updates merge automatically.
