@@ -36,33 +36,5 @@
             ],
             "groupName": "github actions"
         }
-    ],
-    "customManagers": [
-        {
-            "description": "mise version pinned in the documentation workflow",
-            "customType": "regex",
-            "managerFilePatterns": [
-                ".github/workflows/documentation.yaml",
-                ".github/workflows/lint.yaml"
-            ],
-            "matchStrings": [
-                "version: (?<currentValue>\\d\\S*)"
-            ],
-            "depNameTemplate": "jdx/mise",
-            "datasourceTemplate": "github-releases",
-            "extractVersionTemplate": "^v(?<version>.+)$"
-        },
-        {
-            "description": "Renovate version pinned in the Renovate workflow",
-            "customType": "regex",
-            "managerFilePatterns": [
-                ".github/workflows/renovate.yaml"
-            ],
-            "matchStrings": [
-                "renovate-version: (?<currentValue>\\S+)"
-            ],
-            "depNameTemplate": "renovatebot/renovate",
-            "datasourceTemplate": "github-releases"
-        }
     ]
 }
