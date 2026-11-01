@@ -1,4 +1,4 @@
-# Setup Local Development
+# Setup Local Environment
 
 Development tools are pinned in [mise.toml](https://github.com/vetlekise/homelab/blob/main/mise.toml) and installed with [mise](https://mise.jdx.dev/), on Linux, macOS, and Windows.
 
