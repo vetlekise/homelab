@@ -4,6 +4,14 @@ on:
   schedule:
     - cron: "37 5 * * *"
   workflow_dispatch:
+    inputs:
+      log_level:
+        description: Renovate log level
+        type: choice
+        options:
+          - info
+          - debug
+        default: info
 
 permissions:
   contents: read
@@ -33,3 +41,4 @@ jobs:
         env:
           RENOVATE_REPOSITORIES: ${{ github.repository }}
           RENOVATE_PLATFORM_COMMIT: enabled
+          LOG_LEVEL: ${{ inputs.log_level || 'info' }}
