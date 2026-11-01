@@ -1,8 +1,3 @@
----
-aliases:
-  - /reference/architecture/adr/0008-proxmox/
----
-
 # 0008. Use Proxmox VE as the hypervisor
 
 ## Status

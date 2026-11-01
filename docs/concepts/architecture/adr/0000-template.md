@@ -1,8 +1,3 @@
----
-aliases:
-  - /reference/architecture/adr/0000-template/
----
-
 # 0000. Short decision title
 
 ## Status

@@ -3,4 +3,4 @@ title: Guides
 weight: 2
 ---
 
-Step-by-step instructions for completing specific homelab tasks, including manual setup, maintenance, and recovery.
+Accomplish a specific task with practical, goal-oriented instructions.

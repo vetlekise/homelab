@@ -1,8 +1,3 @@
----
-aliases:
-  - /reference/architecture/adr/0005-automation-first/
----
-
 # 0005. Prefer reproducible, automation-first homelab management
 
 ## Status

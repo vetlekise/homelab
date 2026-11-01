@@ -1,6 +1,6 @@
 # Setup Local Development
 
-Development tools are pinned in [mise.toml](mise.toml) and installed with [mise](https://mise.jdx.dev/), on Linux, macOS, and Windows.
+Development tools are pinned in [mise.toml](https://github.com/vetlekise/homelab/blob/main/mise.toml) and installed with [mise](https://mise.jdx.dev/), on Linux, macOS, and Windows.
 
 1. [Install mise](https://mise.jdx.dev/installing-mise.html).
 2. Activate mise in your shell once. This lets mise add the repository's pinned tool versions to your `PATH` automatically, so commands run with the versions specified for this project.
