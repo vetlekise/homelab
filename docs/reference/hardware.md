@@ -1,5 +1,5 @@
 # Hardware
 
 {{< callout type="warning" >}}
-  Work in progress.
+  Work in progress!
 {{< /callout >}}
