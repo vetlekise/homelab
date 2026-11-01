@@ -19,6 +19,8 @@ Use [Renovate](https://docs.renovatebot.com/) to open pull requests for dependen
 ## Consequences
 
 - Renovate supports other hosting platforms and can be self-hosted.
-- GitHub Actions runs Renovate daily and on demand with `GITHUB_TOKEN`; no installed app or personal token is needed.
-- Workflow files are excluded because this token can't update them. PRs created with this token don't trigger normal PR workflows.
+- GitHub Actions runs Renovate daily and on demand with a fine-grained personal access token stored as the `RENOVATE_TOKEN` secret.
+- `GITHUB_TOKEN` can't update workflow files, so the token needs the `Workflows` permission. PRs opened with it also trigger normal PR workflows.
+- The token expires and needs rotating.
+- Renovate reads its settings from `.github/renovate.json`. The workflow only sets the repository to process.
 - Updates need review and validation before merging.
