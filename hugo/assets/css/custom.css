@@ -12,3 +12,21 @@
 .hextra-sidebar-container li:not(:has(> .hextra-sidebar-children))>.hextra-sidebar-item>a {
     padding-inline-end: 0.5rem;
 }
+
+.hextra-nav-container a[href$="/guides/disaster-recovery/"] {
+    background-color: #b91c1c;
+    border-radius: 0.375rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.hextra-nav-container a[href$="/guides/disaster-recovery/"]:hover {
+    background-color: #991b1b;
+    color: #fff;
+    opacity: 1;
+}
+
+.hextra-nav-container a[href$="/guides/disaster-recovery/"]:focus-visible {
+    outline: 2px solid #b91c1c;
+    outline-offset: 2px;
+}

@@ -25,5 +25,5 @@
     </mask>
   </defs>
 
-  <rect width="78.14734" height="64" rx="8.27136" fill="#70A354" mask="url(#cutout)"/>
+  <rect width="78.14734" height="64" rx="8.27136" fill="#2563EB" mask="url(#cutout)"/>
 </svg>

@@ -6,8 +6,16 @@ cascade:
 ---
 
 ## Introduction
-Welcome to my homelab documentation. This homelab is built around automation
-and reproducible infrastructure, with a focus on hosting a media library and
-the services that support it.
 
-The documentation follows the [Diátaxis framework](https://diataxis.fr/), which organizes content by its purpose. Use the left sidebar to explore each section, or use the search bar at the top.
+This site helps you learn, operate, and understand the homelab, with technical details available for reference.
+
+The documentation follows the [Diátaxis framework](https://diataxis.fr/), organizing content by what you want to do: learn, accomplish a task, look up a fact, or understand the system.
+
+## Structure
+
+{{< cards >}}
+  {{< card link="tutorials/" title="Tutorials" subtitle="Learn new skills through lessons that build understanding step by step." >}}
+  {{< card link="guides/" title="Guides" subtitle="Accomplish a specific task with practical, goal-oriented instructions." >}}
+  {{< card link="reference/" title="Reference" subtitle="Look up technical facts, specifications, and other details." >}}
+  {{< card link="concepts/" title="Concepts" subtitle="Understand the ideas, architecture, and decisions behind the homelab." >}}
+{{< /cards >}}

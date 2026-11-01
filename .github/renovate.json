@@ -1,0 +1,68 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:recommended",
+        "helpers:pinGitHubActionDigestsToSemver"
+    ],
+    "timezone": "Europe/Oslo",
+    "schedule": [
+        "before 7am on monday"
+    ],
+    "dependencyDashboard": true,
+    "github-actions": {
+        "enabled": true
+    },
+    "gomod": {
+        "enabled": true
+    },
+    "mise": {
+        "enabled": true
+    },
+    "pre-commit": {
+        "enabled": true
+    },
+    "packageRules": [
+        {
+            "description": "Keep the Go version in go.mod and mise.toml in sync",
+            "matchDepNames": [
+                "go"
+            ],
+            "groupName": "go"
+        },
+        {
+            "description": "One PR for all GitHub Actions updates",
+            "matchManagers": [
+                "github-actions"
+            ],
+            "groupName": "github actions"
+        }
+    ],
+    "customManagers": [
+        {
+            "description": "mise version pinned in the documentation workflow",
+            "customType": "regex",
+            "managerFilePatterns": [
+                ".github/workflows/documentation.yaml",
+                ".github/workflows/lint.yaml"
+            ],
+            "matchStrings": [
+                "version: (?<currentValue>\\d\\S*)"
+            ],
+            "depNameTemplate": "jdx/mise",
+            "datasourceTemplate": "github-releases",
+            "extractVersionTemplate": "^v(?<version>.+)$"
+        },
+        {
+            "description": "Renovate version pinned in the Renovate workflow",
+            "customType": "regex",
+            "managerFilePatterns": [
+                ".github/workflows/renovate.yaml"
+            ],
+            "matchStrings": [
+                "renovate-version: (?<currentValue>\\S+)"
+            ],
+            "depNameTemplate": "renovatebot/renovate",
+            "datasourceTemplate": "github-releases"
+        }
+    ]
+}

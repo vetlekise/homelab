@@ -1,14 +1,12 @@
 ---
-title: Decision records
+title: Decision Records
 weight: 2
-aliases:
-  - /reference/architecture/adr/
 cascade:
   - target:
       kind: page
     params:
       sidebar:
-        exclude: true
+        exclude: true # takes up too much space
 ---
 
 Decisions about the homelab's architecture, tooling, and conventions, recorded as architectural decision records (ADRs).
@@ -38,5 +36,5 @@ Copy the [template](0000-template.md) to start a new ADR. Add it to the table be
 | 0009 | [Use OpenTofu instead of Terraform](0009-opentofu.md) | Accepted |
 | 0010 | [Use GitHub Pages to serve documentation](0010-github-pages.md) | Accepted |
 | 0011 | [Use pre-commit for local and CI checks](0011-pre-commit.md) | Accepted |
-| 0012 | [Use mise to manage development tools](0012-development-tool-management.md) | Proposed |
+| 0012 | [Use mise to manage development tools](0012-development-tool-management.md) | Accepted |
 | 0013 | [Use Renovate for dependency updates](0013-renovate.md) | Accepted |

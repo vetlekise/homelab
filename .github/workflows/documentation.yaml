@@ -10,10 +10,10 @@ on:
       - hugo.yaml
       - go.mod
       - go.sum
+      - mise.toml
       - .github/workflows/documentation.yaml
 
 env:
-  HUGO_VERSION: 0.168.0
   TZ: Europe/Oslo
 
 permissions:
@@ -32,27 +32,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           fetch-depth: 0
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v6
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
 
-      - name: Install Go
-        uses: actions/setup-go@v7
+      - name: Install Go and Hugo
+        uses: jdx/mise-action@6612f0ef07ed2a736cd1e00a94a065522dd41195 # v5
         with:
-          go-version-file: go.mod
-          cache: false
-
-      - name: Install Hugo
-        run: |
-          curl -sfL --output "${RUNNER_TEMP}/hugo.tar.gz" \
-            "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_linux-amd64.tar.gz"
-          mkdir -p "${HOME}/.local/hugo"
-          tar -C "${HOME}/.local/hugo" -xf "${RUNNER_TEMP}/hugo.tar.gz"
-          echo "${HOME}/.local/hugo" >> "${GITHUB_PATH}"
+          version: 2026.10.25
+          install_args: go aqua:gohugoio/hugo
 
       - name: Log tool versions
         run: |
@@ -64,7 +56,7 @@ jobs:
 
       - name: Restore Hugo cache
         id: cache
-        uses: actions/cache/restore@v6
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6
         with:
           path: ${{ runner.temp }}/.cache/hugo
           key: hugo-${{ github.run_id }}
@@ -82,13 +74,13 @@ jobs:
             --cacheDir "${RUNNER_TEMP}/.cache/hugo"
 
       - name: Save Hugo cache
-        uses: actions/cache/save@v6
+        uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6
         with:
           path: ${{ runner.temp }}/.cache/hugo
           key: ${{ steps.cache.outputs.cache-primary-key }}
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v5
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
         with:
           path: ./public
 
@@ -104,4 +96,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5

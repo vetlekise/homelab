@@ -1,8 +1,3 @@
----
-aliases:
-  - /reference/architecture/adr/0002-documentation-style-guide/
----
-
 # 0002. Use the Google developer documentation style guide, enforced with Vale
 
 ## Status

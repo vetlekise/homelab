@@ -28,6 +28,9 @@ module:
 
 menu:
   main:
+    - name: Emergency
+      url: /guides/disaster-recovery/
+      weight: 1
     - name: Search
       weight: 2
       params:

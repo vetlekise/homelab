@@ -1,8 +1,3 @@
----
-aliases:
-  - /reference/architecture/adr/0010-github-pages/
----
-
 # 0010. Use GitHub Pages to serve documentation
 
 ## Status

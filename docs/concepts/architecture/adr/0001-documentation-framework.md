@@ -1,8 +1,3 @@
----
-aliases:
-  - /reference/architecture/adr/0001-documentation-framework/
----
-
 # 0001. Use Diátaxis for the documentation framework
 
 ## Status
