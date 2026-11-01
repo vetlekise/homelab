@@ -1,4 +1,4 @@
-baseURL: https://vetlekise.github.io/homelab/
+baseURL: https://homelab.vetle.dev
 locale: en
 title: Vetle's Homelab
 contentDir: docs
