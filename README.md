@@ -8,6 +8,8 @@
   Vetle's Homelab
 </h1>
 
+[![docs](https://github.com/vetlekise/homelab/actions/workflows/documentation.yaml/badge.svg?branch=main)](https://github.com/vetlekise/homelab/actions/workflows/documentation.yaml)
+
 A personal homelab built around automation and reproducible infrastructure, with a primary focus on hosting my media library and the services that support it.
 
 Feel free to copy whatever, and even use it as a framework to build your own.
