@@ -14,4 +14,4 @@ A personal homelab built around automation and reproducible infrastructure, with
 
 Feel free to copy whatever, and even use it as a framework to build your own.
 
-Read the [documentation](https://vetlekise.github.io/homelab/) for more!
+Read the [documentation](https://homelab.vetle.dev/) for more!
