@@ -42,5 +42,8 @@ menu:
         icon: github
 
 markup:
+  goldmark:
+    renderer:
+      unsafe: true # needed so we can use html tags, e.g. <br>
   highlight:
     noClasses: false
