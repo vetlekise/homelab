@@ -9,9 +9,7 @@
 
 ## Servers
 
-### coruscant
-
-**Role:** Hypervisor
+### coruscant (Hypervisor)
 
 | Component | Specification | Notes |
 |-----------|---------------|-------|
@@ -24,9 +22,7 @@
 | Storage | 1 × 512 GB NVMe SSD (Samsung PM9E1) | Node storage |
 | Network | 1 × 1 GbE RJ45 | |
 
-### scarif
-
-**Role:** Network Attached Storage (NAS)
+### scarif (NAS)
 
 | Component | Specification | Notes |
 |-----------|---------------|-------|
