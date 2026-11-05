@@ -1,9 +1,5 @@
 # Hardware
 
-{{< callout type="warning" >}}
-  Work in progress!
-{{< /callout >}}
-
 ## Networking
 
 | Name | Role | Model | Documentation |
