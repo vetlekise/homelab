@@ -13,6 +13,11 @@
     padding-inline-end: 0.5rem;
 }
 
+/* Left-align content images; Hextra centers them by default. */
+.content img {
+    margin-inline: 0;
+}
+
 .hextra-nav-container a[href$="/guides/disaster-recovery/"] {
     background-color: #b91c1c;
     border-radius: 0.375rem;
