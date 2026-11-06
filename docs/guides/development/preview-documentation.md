@@ -2,7 +2,7 @@
 title: Preview the Documentation Site
 ---
 
-Preview your documentation changes locally before they are published. For how the site is built and deployed, see [Documentation Publishing](../concepts/documentation-publishing.md).
+Preview your documentation changes locally before they are published. For how the site is built and deployed, see [Documentation Publishing](../../concepts/documentation-publishing.md).
 
 ## Preview site locally
 

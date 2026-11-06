@@ -48,7 +48,7 @@ Follow each product's conventions for naming, file layout, formatting, and struc
 
 ## Documentation navigation
 
-Sections without an `_index.md` file act as expandable sidebar groups. Add an `_index.md` file when a section needs a landing page; its sidebar title then links to that page.
+Every folder under `docs/` needs an `_index.md` file to appear as a sidebar group. Without one, Hugo doesn't treat a nested folder as a section, and its pages show up as loose items in the parent group. Only top-level folders become sections on their own; there, a missing `_index.md` makes the sidebar title an expandable group without a landing page. Add content to an `_index.md` file when a section needs a landing page; its sidebar title then links to that page.
 
 This behavior uses [a small sidebar script](hugo/assets/js/core/sidebar-groups.js), loaded through Hextra's core script pipeline. It reuses the theme's toggle buttons instead of overriding its sidebar template. JavaScript must be enabled; without it, section titles remain normal links.
 

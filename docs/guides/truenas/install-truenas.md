@@ -2,7 +2,7 @@
 title: Install TrueNAS
 ---
 
-Install TrueNAS Community Edition (CE) on `scarif`, the NAS described in the [hardware reference](../reference/hardware.md). This guide records the steps used for this install. For full details, see the official [TrueNAS installation instructions](https://www.truenas.com/docs/scale/gettingstarted/install/).
+Install TrueNAS Community Edition (CE) on `scarif`, the NAS described in the [hardware reference](../../reference/hardware.md). This guide records the steps used for this install. For full details, see the official [TrueNAS installation instructions](https://www.truenas.com/docs/scale/gettingstarted/install/).
 
 ## Before you begin
 

@@ -21,6 +21,6 @@ flowchart LR
     DNS --> Pages
 ```
 
-To preview the site or check a build locally, see [Preview the documentation site](../guides/preview-documentation.md).
+To preview the site or check a build locally, see [Preview the documentation site](../guides/development/preview-documentation.md).
 
 For the decision behind this setup, see [ADR 0010](architecture/adr/0010-github-pages.md).
