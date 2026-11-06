@@ -5,6 +5,13 @@ assignees:
   - vetlekise
 projects: ["vetlekise/8"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        **Title format:** `<action> <document/section>`
+        - `Fix outdated install steps in README`
+        - `Document backup restore procedure`
+
   - type: input
     id: doc-location
     attributes:

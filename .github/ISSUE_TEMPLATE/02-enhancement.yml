@@ -5,6 +5,13 @@ assignees:
   - vetlekise
 projects: ["vetlekise/8"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        **Title format:** `<verb> <what> <where>`
+        - `Add automated backups for Nextcloud`
+        - `Migrate Pi-hole to a dedicated VLAN`
+
   - type: textarea
     id: feature-description
     attributes:

@@ -7,7 +7,12 @@ projects: ["vetlekise/8"]
 body:
   - type: markdown
     attributes:
-      value: "Break the work into child issues and link them as sub-issues after creating this."
+      value: |
+        **Title format:** `<large outcome>`
+        - `Overhaul home network for security and redundancy`
+        - `Centralize monitoring and alerting`
+
+        Break the work into child issues and link them as sub-issues after creating this.
 
   - type: textarea
     id: epic-description

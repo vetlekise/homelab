@@ -5,6 +5,13 @@ assignees:
   - vetlekise
 projects: ["vetlekise/8"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        **Title format:** `<service/hardware> <symptom>`
+        - `Nextcloud returns 502 after container restart`
+        - `Proxmox node loses network after reboot`
+
   - type: dropdown
     id: affected-service-hardware
     attributes:
