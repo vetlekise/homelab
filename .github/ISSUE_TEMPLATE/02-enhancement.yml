@@ -3,6 +3,7 @@ description: Suggest an idea, enhancement, or new feature.
 labels: ["enhancement"]
 assignees:
   - vetlekise
+projects: ["vetlekise/8"]
 body:
   - type: textarea
     id: feature-description

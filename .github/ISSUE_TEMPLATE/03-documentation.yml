@@ -3,6 +3,7 @@ description: Report an error, suggest an improvement, or request new documentati
 labels: ["documentation"]
 assignees:
   - vetlekise
+projects: ["vetlekise/8"]
 body:
   - type: input
     id: doc-location
