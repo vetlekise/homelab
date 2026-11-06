@@ -1,0 +1,42 @@
+name: Epic
+description: Create a high-level parent issue to track a large initiative or project.
+labels: ["epic"]
+assignees:
+  - vetlekise
+projects: ["vetlekise/8"]
+body:
+  - type: textarea
+    id: epic-description
+    attributes:
+      label: High-Level Goal
+      description: "What is the overarching objective of this epic?"
+      placeholder: "e.g., Overhaul the home network infrastructure for better security and redundancy."
+    validations:
+      required: true
+
+  - type: textarea
+    id: business-value
+    attributes:
+      label: Value / Motivation
+      description: "Why are we doing this? What is the overarching benefit?"
+      placeholder: "e.g., To eliminate single points of failure and ensure secure remote access."
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria / Scope
+      description: "What conditions must be met for this epic to be considered complete? (Child issues will handle specific tasks)"
+      placeholder: "e.g., \n- Primary and backup routers configured.\n- VPN access established.\n- Legacy network retired."
+    validations:
+      required: true
+
+  - type: input
+    id: target-timeline
+    attributes:
+      label: Target Timeline
+      description: "When should this epic be completed?"
+      placeholder: "e.g., Q4 2026"
+    validations:
+      required: false
