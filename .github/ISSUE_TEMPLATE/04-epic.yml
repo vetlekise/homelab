@@ -5,6 +5,10 @@ assignees:
   - vetlekise
 projects: ["vetlekise/8"]
 body:
+  - type: markdown
+    attributes:
+      value: "Break the work into child issues and link them as sub-issues after creating this."
+
   - type: textarea
     id: epic-description
     attributes:
@@ -15,9 +19,9 @@ body:
       required: true
 
   - type: textarea
-    id: business-value
+    id: motivation
     attributes:
-      label: Value / Motivation
+      label: Motivation
       description: "Why are we doing this? What is the overarching benefit?"
       placeholder: "e.g., To eliminate single points of failure and ensure secure remote access."
     validations:
@@ -26,17 +30,16 @@ body:
   - type: textarea
     id: acceptance-criteria
     attributes:
-      label: Acceptance Criteria / Scope
-      description: "What conditions must be met for this epic to be considered complete? (Child issues will handle specific tasks)"
-      placeholder: "e.g., \n- Primary and backup routers configured.\n- VPN access established.\n- Legacy network retired."
+      label: Acceptance Criteria
+      description: "What must be true for this epic to be complete? (Child issues handle the specific tasks)"
+      placeholder: "- [ ] Primary and backup routers configured\n- [ ] VPN access established\n- [ ] Legacy network retired"
     validations:
       required: true
 
-  - type: input
-    id: target-timeline
+  - type: textarea
+    id: out-of-scope
     attributes:
-      label: Target Timeline
-      description: "When should this epic be completed?"
-      placeholder: "e.g., Q4 2026"
+      label: Out of Scope / Notes
+      description: "What is explicitly not part of this epic?"
     validations:
       required: false
