@@ -8,6 +8,8 @@ When you re-test a drive, add a column with the new date. Compare it against the
 
 ## Toshiba MG07ACA14TE `X840A01NF94G`
 
+Bought used from Bargain Hardware on 2026-10-27, with a 90-day return-to-base (RTB) warranty until 2027-01-25.
+
 | Attribute | 2026-11-07 |
 |-----------|------------|
 | Overall health | PASSED |
@@ -21,6 +23,8 @@ When you re-test a drive, add a column with the new date. Compare it against the
 | Temperature (min/max) | 34 °C (17/49) |
 
 ## Toshiba MG07ACA14TE `X8D0A0EXF94G`
+
+Bought used from Bargain Hardware on 2026-10-27, with a 90-day return-to-base (RTB) warranty until 2027-01-25.
 
 | Attribute | 2026-11-07 |
 |-----------|------------|
