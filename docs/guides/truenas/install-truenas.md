@@ -58,3 +58,9 @@ Before creating storage pools, run long SMART tests on the data drives to check 
    ```sh
    sudo smartctl -l selftest /dev/sdX
    ```
+
+1. Record the drive's health attributes in the [drive baselines](../../reference/drive-baselines.md) reference:
+
+   ```sh
+   sudo smartctl -a /dev/sdX
+   ```
