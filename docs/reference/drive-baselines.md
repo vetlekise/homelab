@@ -2,7 +2,7 @@
 title: Drive Baselines
 ---
 
-SMART baselines for the drives in the [hardware reference](hardware.md). Each drive has its own section, identified by serial number because device names such as `/dev/sda` can change between boots. To record a new baseline, see [Run long SMART tests](../guides/truenas/install-truenas.md#run-long-smart-tests).
+SMART baselines for the drives in the [hardware reference](hardware.md). Each drive has its own section, identified by serial number because device names such as `/dev/sda` can change between boots. To record a new baseline, see [Run long SMART tests](../guides/storage/run-long-smart-tests.md#record-a-baseline).
 
 When you re-test a drive, add a column with the new date. Compare it against the first column. Reallocated sectors, pending sectors, offline uncorrectable sectors, and CRC errors that rise above 0 are early warning signs.
 
