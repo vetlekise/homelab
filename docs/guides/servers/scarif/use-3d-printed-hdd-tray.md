@@ -2,7 +2,7 @@
 title: Use a 3D-Printed HDD Tray
 ---
 
-Add a second hard drive to the Fractal Design Define R5 case in `scarif`, the NAS described in the [hardware reference](../../reference/hardware.md), using a 3D-printed tray when you don't have a second official metal tray. This guide records the modifications needed for the [Fractal Define R5 HDD tray](https://www.printables.com/model/79789-fractal-define-r5-hdd-tray) model on Printables.
+Add a second hard drive to the Fractal Design Define R5 case in `scarif`, the NAS described in the [hardware reference](../../../reference/hardware.md), using a 3D-printed tray when you don't have a second official metal tray. This guide records the modifications needed for the [Fractal Define R5 HDD tray](https://www.printables.com/model/79789-fractal-define-r5-hdd-tray) model on Printables.
 
 ## Before you begin
 
@@ -18,10 +18,6 @@ The screw holes in the printed tray were slightly too small, so the screws would
 1. Hold the drill bit with the pliers.
 1. Screw the bit into each screw hole by hand.
 1. Check that the screws fit and repeat for the remaining holes.
-
-{{< callout type="info" >}}
-  This worked well.
-{{< /callout >}}
 
 ## Trim the rubber grommets
 
