@@ -37,3 +37,22 @@ Bought used from Bargain Hardware on 2026-10-27, with a 90-day return-to-base (R
 | Offline uncorrectable | 0 |
 | UDMA CRC errors | 0 |
 | Temperature (min/max) | 35 °C (17/51) |
+
+## Kingston SUV400S37240G `50026B77690460F9`
+
+The TrueNAS boot drive. TrueNAS raised a 4040 uncorrectable errors alert for it on 2026-11-06. The extended self-test and a boot pool scrub both finished without errors, so this records the values to watch for further growth.
+
+| Attribute | 2026-11-10 |
+|-----------|------------|
+| Overall health | PASSED |
+| Extended self-test | Completed without error |
+| Power-on hours | 9145 |
+| Power cycles | 2886 |
+| Reallocated sectors | 22 |
+| Current pending sectors | 0 |
+| Reported uncorrectable errors | 4040 |
+| Runtime bad blocks | 80 |
+| SSD life left (normalized) | 83 |
+| Host writes | 24251 GiB |
+| UDMA CRC errors | 0 |
+| Temperature (min/max) | 29 °C (8/47) |

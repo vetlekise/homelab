@@ -30,4 +30,8 @@ mise install
 task setup
 ```
 
+{{< callout type="info" >}}
+  On Linux, `task setup` builds Vale from source, which needs a C++ compiler. If it fails with `exec: "g++": executable file not found`, install one, for example `sudo dnf install gcc-c++` on Fedora or `sudo apt install g++` on Debian and Ubuntu, then run `task setup` again.
+{{< /callout >}}
+
 Run `task --list` to see the available tasks.
