@@ -36,7 +36,7 @@ tank
 |---------|-------------|-------------|-----------|-------|--------|
 | `tank/media` | 1 MiB | Off | None | None | Created |
 | `tank/documents` | 128 KiB (default) | Off | Daily, 4 weeks | None | Planned |
-| `tank/backups` | 128 KiB (default) | Off | None | TBD | Planned |
+| `tank/backups` | 128 KiB (default) | Off | None | 1 TiB | Planned |
 
 All datasets use the default LZ4 compression and no encryption.
 
@@ -50,7 +50,7 @@ All datasets use the default LZ4 compression and no encryption.
 | One `media` dataset | Hardlinks and instant moves only work inside one dataset, so imports from `downloads` don't copy. It also gives one NFS export, because hardlinks fail across NFS mounts. Moving data between datasets later copies it, so split only for per-type quotas or snapshots |
 | Daily snapshots on `documents` | Irreplaceable and slow-changing, so snapshots are cheap. They live in the same pool, so also back the dataset up elsewhere |
 | No snapshots on `media` and `backups` | `media` can be fetched again, and backup tools keep their own history. Snapshots of deleted files keep using space |
-| Quota on `backups` | Stops backups from filling the pool. Keep the pool below about 80% full |
+| Quota on `backups` | Stops backups from filling the pool. 1 TiB covers VM backups for now, so raise it when needed. Keep the pool below about 80% full |
 | LZ4 compression | The default, with negligible cost. Media doesn't compress, but documents and backups often do |
 | No encryption | It can only be enabled at dataset creation, and a lost key means lost data. The only threat it covers is drive theft. To add it later, copy the data into a new encrypted dataset |
 
@@ -77,7 +77,7 @@ Each dataset has its own read-write group, so access can be granted per dataset.
 
 Create each group with **SMB Group** on and no sudo or privileges.
 
-Every dataset uses the same POSIX ACL, with `<group>` as its group. The owner is `root` and the owner group is `<group>`. Each entry exists twice, once for the folder and once as a **Default** entry that new files and folders inherit.
+Every dataset uses the same POSIX ACL, with `<group>` as its group. Start from the `POSIX_RESTRICTED` preset, then add the named Group and Mask entries below. The owner is `root` and the owner group is `<group>`. Each entry exists twice, once for the folder and once as a **Default** entry that new files and folders inherit.
 
 | Entry | Access |
 |-------|--------|
