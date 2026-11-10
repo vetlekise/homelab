@@ -35,8 +35,8 @@ tank
 | Dataset | Record size | Access time | Snapshots | Quota | Status |
 |---------|-------------|-------------|-----------|-------|--------|
 | `tank/media` | 1 MiB | Off | None | None | Created |
-| `tank/documents` | 128 KiB (default) | Off | Daily, 4 weeks | None | Planned |
-| `tank/backups` | 128 KiB (default) | Off | None | 1 TiB | Planned |
+| `tank/documents` | 128 KiB (default) | Off | Daily, 4 weeks | None | Created. Snapshot task planned |
+| `tank/backups` | 128 KiB (default) | Off | None | 1 TiB | Created |
 
 All datasets use the default LZ4 compression and no encryption.
 
@@ -72,7 +72,7 @@ Each dataset has its own read-write group, so access can be granted per dataset.
 | Dataset | Group | Members | Status |
 |---------|-------|---------|--------|
 | `tank/media` | `media-rw` | Your user. Later, the Kubernetes service user | Created |
-| `tank/documents` | `documents-rw` | Your user | Planned |
+| `tank/documents` | `documents-rw` | Your user | Created |
 | `tank/backups` | `backups-rw` | Backup service users | Planned |
 
 Create each group with **SMB Group** on and no sudo or privileges.
@@ -82,7 +82,7 @@ Every dataset uses the same POSIX ACL, with `<group>` as its group. Start from t
 | Entry | Access |
 |-------|--------|
 | User Obj | `root`: read, write, execute |
-| Group Obj | `<group>`: read, write, execute |
+| Group Obj | Read, write, execute. The owning group: `<group>` on the dataset root, the creator's primary group on new files |
 | Group | `<group>`: read, write, execute |
 | Mask | Read, write, execute |
 | Other | None |
@@ -109,4 +109,5 @@ Every dataset uses the same POSIX ACL, with `<group>` as its group. Start from t
 | Export the TrueNAS configuration | Weekly, and before each upgrade | Restores users, shares, and settings after a rebuild. Store a copy off the NAS, such as in cloud storage |
 
 The configuration export contains secrets, so keep it encrypted and document where it's stored, as [ADR 0005](../concepts/architecture/adr/0005-automation-first.md) requires. It doesn't contain data, so back up `documents` and `appdata` separately.
+
 Record SMART readings in [Drive baselines](drive-baselines.md) after each long test.
