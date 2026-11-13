@@ -32,13 +32,12 @@ tank
 ```
 
 `downloads`, `movies`, `shows`, `music`, `books`, and `games` are folders in the `media` dataset, not separate datasets.
-`pictures` is a dataset root for personal photos and videos; it has no subfolders.
 
 | Dataset | Record size | Access time | Snapshots | Quota | Status |
 |---------|-------------|-------------|-----------|-------|--------|
 | `tank/media` | 1 MiB | Off | None | None | Created |
 | `tank/documents` | 128 KiB (default) | Off | Daily, 4 weeks | None | Created |
-| `tank/pictures` | 128 KiB (default) | Off | None | None | Planned |
+| `tank/pictures` | 128 KiB (default) | Off | None | None | Created |
 | `tank/backups` | 128 KiB (default) | Off | None | 1 TiB | Created |
 
 All datasets use the default LZ4 compression and no encryption.
@@ -64,7 +63,7 @@ All datasets use the default LZ4 compression and no encryption.
 | `tank/media` | SMB | Desktops | Multi-protocol preset, because the dataset is also shared over NFS |
 | `tank/media` | NFS | Kubernetes nodes (planned) | Read-write. Mount the whole export so `downloads` and the library share one mount. Restrict authorized hosts |
 | `tank/documents` | SMB | Desktops | |
-| `tank/pictures` | SMB | Desktops | Planned |
+| `tank/pictures` | SMB | Desktops | |
 | `tank/backups/proxmox` | NFS | Proxmox (planned) | |
 
 Sharing one dataset over both SMB and NFS is the exception, because their permission models can conflict. Test access from both sides.
@@ -77,7 +76,7 @@ Each dataset has its own read-write group, so access can be granted per dataset.
 |---------|-------|---------|--------|
 | `tank/media` | `media-rw` | Your user. Later, the Kubernetes service user | Created |
 | `tank/documents` | `documents-rw` | Your user | Created |
-| `tank/pictures` | `pictures-rw` | Your user | Planned |
+| `tank/pictures` | `pictures-rw` | Your user | Created |
 | `tank/backups` | `backups-rw` | Backup service users | Created |
 
 Create each group with **SMB Group** on and no sudo or privileges.
