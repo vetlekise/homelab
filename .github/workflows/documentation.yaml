@@ -85,7 +85,7 @@ jobs:
           path: ./public
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     needs: build
     permissions:
       pages: write

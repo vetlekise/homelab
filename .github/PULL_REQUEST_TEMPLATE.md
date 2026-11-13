@@ -10,5 +10,4 @@
 
 ## Checklist
 
-- [ ] PR title follows Conventional Commits.
 - [ ] Docs are updated (README, `docs/`, ADRs) if behavior or decisions changed.
