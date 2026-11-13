@@ -60,7 +60,7 @@ All datasets use the default LZ4 compression and no encryption.
 |---------|----------|---------|-------|
 | `tank/media` | SMB | Desktops | Multi-protocol preset, because the dataset is also shared over NFS |
 | `tank/media` | NFS | Kubernetes nodes (planned) | Read-write. Mount the whole export so `downloads` and the library share one mount. Restrict authorized hosts |
-| `tank/documents` | SMB | Desktops (planned) | |
+| `tank/documents` | SMB | Desktops | |
 | `tank/backups/proxmox` | NFS | Proxmox (planned) | |
 
 Sharing one dataset over both SMB and NFS is the exception, because their permission models can conflict. Test access from both sides.
