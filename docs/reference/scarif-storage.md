@@ -35,7 +35,7 @@ tank
 | Dataset | Record size | Access time | Snapshots | Quota | Status |
 |---------|-------------|-------------|-----------|-------|--------|
 | `tank/media` | 1 MiB | Off | None | None | Created |
-| `tank/documents` | 128 KiB (default) | Off | Daily, 4 weeks | None | Created. Snapshot task planned |
+| `tank/documents` | 128 KiB (default) | Off | Daily, 4 weeks | None | Created |
 | `tank/backups` | 128 KiB (default) | Off | None | 1 TiB | Created |
 
 All datasets use the default LZ4 compression and no encryption.
