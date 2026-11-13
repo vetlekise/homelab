@@ -26,16 +26,19 @@ tank
 │   ├── books
 │   └── games
 ├── documents
+├── pictures
 └── backups
     └── proxmox
 ```
 
 `downloads`, `movies`, `shows`, `music`, `books`, and `games` are folders in the `media` dataset, not separate datasets.
+`pictures` is a dataset root for personal photos and videos; it has no subfolders.
 
 | Dataset | Record size | Access time | Snapshots | Quota | Status |
 |---------|-------------|-------------|-----------|-------|--------|
 | `tank/media` | 1 MiB | Off | None | None | Created |
 | `tank/documents` | 128 KiB (default) | Off | Daily, 4 weeks | None | Created |
+| `tank/pictures` | 128 KiB (default) | Off | None | None | Planned |
 | `tank/backups` | 128 KiB (default) | Off | None | 1 TiB | Created |
 
 All datasets use the default LZ4 compression and no encryption.
@@ -45,13 +48,13 @@ All datasets use the default LZ4 compression and no encryption.
 | Setting | Reason |
 |---------|--------|
 | Record size 1 MiB on `media` | Files are large, written once, and read sequentially, so bigger blocks mean fewer I/O operations. Small files, such as GBA ROMs, still use a block sized to the file |
-| Default record size elsewhere | Documents and backups have mixed file sizes |
+| Default record size elsewhere | Documents, pictures, and backups have mixed file sizes |
 | Access time off | Avoids a write on every read |
 | One `media` dataset | Hardlinks and instant moves only work inside one dataset, so imports from `downloads` don't copy. It also gives one NFS export, because hardlinks fail across NFS mounts. Moving data between datasets later copies it, so split only for per-type quotas or snapshots |
 | Daily snapshots on `documents` | Irreplaceable and slow-changing, so snapshots are cheap. They live in the same pool, so also back the dataset up elsewhere |
-| No snapshots on `media` and `backups` | `media` can be fetched again, and backup tools keep their own history. Snapshots of deleted files keep using space |
+| No snapshots on `media`, `pictures`, and `backups` | `media` can be fetched again, `pictures` is a secondary copy of the Google Cloud library, and backup tools maintain their own history. Snapshots of deleted files keep using space |
 | Quota on `backups` | Stops backups from filling the pool. 1 TiB covers VM backups for now, so raise it when needed. Keep the pool below about 80% full |
-| LZ4 compression | The default, with negligible cost. Media doesn't compress, but documents and backups often do |
+| LZ4 compression | The default, with negligible cost. Media and pictures don't compress much, but documents and backups often do |
 | No encryption | It can only be enabled at dataset creation, and a lost key means lost data. The only threat it covers is drive theft. To add it later, copy the data into a new encrypted dataset |
 
 ## Shares
@@ -61,6 +64,7 @@ All datasets use the default LZ4 compression and no encryption.
 | `tank/media` | SMB | Desktops | Multi-protocol preset, because the dataset is also shared over NFS |
 | `tank/media` | NFS | Kubernetes nodes (planned) | Read-write. Mount the whole export so `downloads` and the library share one mount. Restrict authorized hosts |
 | `tank/documents` | SMB | Desktops | |
+| `tank/pictures` | SMB | Desktops | Planned |
 | `tank/backups/proxmox` | NFS | Proxmox (planned) | |
 
 Sharing one dataset over both SMB and NFS is the exception, because their permission models can conflict. Test access from both sides.
@@ -73,6 +77,7 @@ Each dataset has its own read-write group, so access can be granted per dataset.
 |---------|-------|---------|--------|
 | `tank/media` | `media-rw` | Your user. Later, the Kubernetes service user | Created |
 | `tank/documents` | `documents-rw` | Your user | Created |
+| `tank/pictures` | `pictures-rw` | Your user | Planned |
 | `tank/backups` | `backups-rw` | Backup service users | Created |
 
 Create each group with **SMB Group** on and no sudo or privileges.
@@ -104,6 +109,6 @@ Every dataset uses the same POSIX ACL, with `<group>` as its group. Start from t
 | Email alerts | Always on | Failures go unnoticed otherwise |
 | Export the TrueNAS configuration | Weekly, and before each upgrade | Restores users, shares, and settings after a rebuild. Store a copy off the NAS, such as in cloud storage |
 
-The configuration export contains secrets, so keep it encrypted and document where it's stored, as [ADR 0005](../concepts/architecture/adr/0005-automation-first.md) requires. It doesn't contain data, so back up `documents` and `appdata` separately.
+The configuration export contains secrets, so keep it encrypted and document where it's stored, as [ADR 0005](../concepts/architecture/adr/0005-automation-first.md) requires.
 
 Record SMART readings in [Drive baselines](drive-baselines.md) after each long test.
