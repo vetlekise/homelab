@@ -37,7 +37,7 @@ Titles must follow [Conventional Commits](https://www.conventionalcommits.org/):
 Why: with squash merges, the PR/MR title is the only commit message that survives on `main`, so it is the one thing worth standardizing. This also allows changelog generation later.
 
 - Commits inside a branch are not restricted.
-- A PR-title-lint CI check should enforce the format.
+- The [PR title workflow](.github/workflows/pr-title.yaml) enforces the format with [action-semantic-pull-request](https://github.com/amannn/action-semantic-pull-request). Add its `validate` job as a required status check in branch protection.
 
 ## Product conventions
 
