@@ -96,10 +96,6 @@ Every dataset uses the same POSIX ACL, with `<group>` as its group. Start from t
 
 ## Maintenance
 
-{{< callout type="info" >}}
-  None of this is set up yet.
-{{< /callout >}}
-
 | Task | Schedule | Why |
 |------|----------|-----|
 | Scrub `tank` | Monthly | Finds silent corruption by checking every block against its checksum |
