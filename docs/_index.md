@@ -7,6 +7,12 @@ cascade:
 
 ## Introduction
 
+This homelab is built around automation and reproducible infrastructure, with a primary focus on hosting my media library and the services that support it.
+
+{{< callout type="warning" >}}
+  The project is in an alpha stage and changes quickly. Expect breaking changes, renamed files, and shifting conventions without notice.
+{{< /callout >}}
+
 This site helps you learn, operate, and understand the homelab, with technical details available for reference.
 
 The documentation follows the [Diátaxis framework](https://diataxis.fr/), organizing content by what you want to do: learn, accomplish a task, look up a fact, or understand the system.

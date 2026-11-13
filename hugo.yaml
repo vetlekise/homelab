@@ -28,8 +28,8 @@ module:
 
 menu:
   main:
-    - name: Getting started
-      url: /getting-started/
+    - name: Introduction
+      url: /
       weight: 1
     - name: Emergency
       url: /guides/disaster-recovery/
