@@ -8,6 +8,9 @@
     "schedule": [
         "before 7am on monday"
     ],
+    "labels": [
+        "dependencies"
+    ],
     "dependencyDashboard": true,
     "github-actions": {
         "enabled": true

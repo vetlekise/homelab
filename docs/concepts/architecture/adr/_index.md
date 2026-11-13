@@ -39,3 +39,4 @@ Copy the [template](0000-template.md) to start a new ADR. Add it to the table be
 | 0012 | [Use mise to manage development tools](0012-development-tool-management.md) | Accepted |
 | 0013 | [Use Renovate for dependency updates](0013-renovate.md) | Accepted |
 | 0014 | [Document only what is specific to this homelab](0014-minimal-documentation.md) | Accepted |
+| 0015 | [Use GitHub generated release notes](0015-github-generated-release-notes.md) | Accepted |
