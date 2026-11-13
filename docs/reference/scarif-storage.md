@@ -73,7 +73,7 @@ Each dataset has its own read-write group, so access can be granted per dataset.
 |---------|-------|---------|--------|
 | `tank/media` | `media-rw` | Your user. Later, the Kubernetes service user | Created |
 | `tank/documents` | `documents-rw` | Your user | Created |
-| `tank/backups` | `backups-rw` | Backup service users | Planned |
+| `tank/backups` | `backups-rw` | Backup service users | Created |
 
 Create each group with **SMB Group** on and no sudo or privileges.
 
